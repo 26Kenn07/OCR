@@ -1,5 +1,3 @@
-import cv2
-import numpy as np
 import pytesseract
 from PIL import Image
 import streamlit as st
@@ -11,10 +9,10 @@ uploaded_image = st.file_uploader("Upload an image (JPEG/PNG)", type=['png', 'jp
 if uploaded_image is not None:
     img = Image.open(uploaded_image)
 
-    img_cv = np.array(img)
-    img_gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
+    # img_cv = np.array(img)
+    # img_gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
 
-    extracted_text = pytesseract.image_to_string(img_gray, lang='eng+hin')
+    extracted_text = pytesseract.image_to_string(img, lang='eng+hin')
 
 
     st.subheader("Extracted Text:")
