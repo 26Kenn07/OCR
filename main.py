@@ -1,7 +1,7 @@
 import pytesseract
 from PIL import Image
 import streamlit as st
-
+pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 st.title("OCR and Keyword Search (Hindi & English)")
 
 uploaded_image = st.file_uploader("Upload an image (JPEG/PNG)", type=['png', 'jpeg', 'jpg'])
