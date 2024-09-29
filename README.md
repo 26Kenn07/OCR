@@ -23,7 +23,7 @@ This application allows users to upload images in JPEG or PNG format and extract
 
 Clone this repository:
 
-   ```bash
+   ```
    git clone https://github.com/your-username/ocr-keyword-search.git
    cd ocr-keyword-search
  ```
@@ -31,14 +31,14 @@ Clone this repository:
  
 ## Create a virtual environment:
 
-    ```bash
+    ```
     python -m venv venv
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     ```
 
 ## Install the required packages:
 
-    ```bash
+    ```
     pip install -r requirements.txt
     ```
 
